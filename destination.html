@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width" />
+        <meta name="robots" content="noindex, follow" />
+        <meta name="description" content="site of a travel agency for a road trip around all the most beautifull castel of Belgium" />
+        <meta name="keywords" content="castel, road trip, belgium, bus" />
+        <meta name="geo.placename" content="Ingelmunster" />
+        <meta name="geo.region" content="BE-WHT" />
+        <link type="text/css" rel="stylesheet" media="screen and (min-width: 1024px)" href="View/CSS/main.css">
+        <link type="text/css" rel="stylesheet" media="screen and (max-width: 1024px)" href="View/CSS/main.css">
+        <link type="text/css" rel="stylesheet" media="screen and (min-width: 1024px) and (-ms-high-contrast: none), (-ms-high-contrast: active)" href="View/CSS/main.css">
+        <link type="text/css" rel="stylesheet" media="screen and (max-width: 1024px) and (-ms-high-contrast: none), (-ms-high-contrast: active)" href="View/CSS/main.css">
+        <link href="View/Images/Logo.png" rel="icon">
+        <title>Castle Tour</title>
+    </head>
+    <body>
+        <div id="top"></div>
+        <header>
+            <div id="menu_about">
+                <a href="index.html#about"><p>À propos</p></a>
+                <a href="destination.html#destination"><p>Destinations</p></a>
+            </div>
+            <a href="index.html"><img src="View/Images/Logo.png" alt="Logo"/></a>
+            <div id="menu_dest">
+                <a href="index.html#contact"><p>Contact</p></a>
+                <a href="destination.html"><p>Réservation</p></a>
+            </div>
+        </header>
+        <div id="banner"></div>
+        <a id="to_the_top" href="#top"><img src="View/Images/arrow.svg" alt="arrow"/></a>
+        <section id="main">
+            <img id="map" src="View/Images/map.png" alt="schémas du trajet du road trip"/>
+            <div class="separation"></div>
+            <form method="POST">
+                <h2>Réservation</h2>
+                <div>
+                    <input type="text" name="name" placeholder="Nom"/>
+                    <input type="text" name="surname" placeholder="Prénom"/>
+                </div>
+                <input id="email" name="mail" type="email" placeholder="Email"/>
+                <div>
+                    <input id="adress" name="adress" type="text" placeholder="Adresse"/>
+                    <input id="number" name="adress_number" type="number" placeholder="N°"/>
+                </div>
+                <div>
+                    <input type="number" name="post_code" placeholder="Code postal"/>
+                    <input type="text" name="city" placeholder="ville"/>
+                </div>
+                <div id="end">
+                    <input id="person" name="reservation_quantity" type="number" placeholder="Nbre réservations"/>
+                    <input id="submit" type="submit" value="Valider"/>
+                </div>
+            </form>
+        </section>
+        <section class="about" id="destination">
+            <h2>Destinations</h2>
+        </section>
+        <!--Boloeil-->
+        <section class="content">
+            <img src="View/Images/Boloeil_cmp.jpeg" alt="chateau d\'Alden Biesen"/>
+            <div class="separation"></div>
+            <div class="text">
+                <h3>Château de Beloeil</h3>
+                <p>Il a été destiné au comte de Ligne au XVIIe siècle. La propriété est maintenant propriété de la Maison de Ligne.</p>    
+            </div>
+        </section>
+        <!--Seneffe-->
+        <section class="content reverse">
+            <img src="View/Images/Seneffe_cmp.jpeg" alt="chateau d\'Alden Biesen"/>
+            <div class="separation"></div>
+            <div class="text">
+                <h3>Château de Seneffe</h3>
+                <p>Créé au courant du 18e siècle, le château de Seneffe abrite la plus belle collection d’orfèvrerie de Belgique. Ce château de style néo-classique fut construit pour un homme d’affaire appelé Julien Despestre. Vous pourrez y visiter son théâtre, son orangerie, ses jardins et ses étangs.</p>
+            </div>
+        </section>
+        <!--Chimay-->
+        <section class="content">
+            <img src="View/Images/Chimay_cmp.jpeg" alt="chateau d\'Alden Biesen"/>
+            <div class="separation"></div>
+            <div class="text">
+                <h3>Château de Chimay</h3>
+                <p>Ce manoir du XVIe siècle fut construit à partir d’un Donjon. Il continue d’être habité par la famille princière des Chimay.</p>
+            </div>
+        </section>
+        <!--Freyr-->
+        <section class="content reverse">
+            <img src="View/Images/Freyr_cmp.jpeg" alt="chateau d\'Alden Biesen"/>
+            <div class="separation"></div>
+            <div class="text">
+                <h3>Château de Freÿr</h3>
+                <p>On voit son apparition au XVIe siècle. Celui-ci fut construit sur les ruines d’un ancien château fort. Il sera ensuite agrandi dans le courant XVIIe siècle.	</p>
+            </div>
+        </section>
+        <!--Reinhardstein-->
+        <section class="content">
+            <img src="View/Images/Reinhardstein_cmp.jpeg" alt="chateau d\'Alden Biesen"/>
+            <div class="separation"></div>
+            <div class="text">
+                <h3>Château de Reinhardstein</h3>
+                <p>Ce château existe depuis l’époque des Celtes. Il fut détruit puis reconstruit en 1354. Il connaitra deux abandons et pillages dans sa vie. Il sera restauré par la suite. Mais le nouveau propriétaire n’a pas voulu le reproduire à l’identique.</p>
+            </div>
+        </section>
+        <!--Alden Biesen-->
+        <section class="content reverse">
+            <img src="View/Images/Alden-Biesen_comp2.jpeg" alt="chateau d\'Alden Biesen"/>
+            <div class="separation"></div>
+            <div class="text">
+                <h3>Alden Biesen</h3>
+                <p>Il a été conçu par l’ordre allemand des chevaliers Teutonique. Le complexe du château sera vendu aux enchères lorsque l’ordre Teutonique sera dissous lors de la révolution française. Ce ne sera que lorsque Guillaume Claes achètera le château que celui-ci deviendra une propriété privée. Mais après un gros incendie, le château deviendra propriété du gouvernement Belge.</p>
+            </div>
+        </section>
+        <!--Beersel-->
+        <section class="content">
+            <img src="View/Images/Beersel_cmp.jpeg" alt="chateau d\'Alden Biesen"/>
+            <div class="separation"></div>
+            <div class="text">
+                <h3>Château de Beersel</h3>
+                <p> Il est l’un des rares château à avoir conservé son aspect d’origine du XVe siècle. Il a été repris par le conseil de communal de Beersel. Si celui-ci a belle et bien conservé son aspect, il a néanmoins besoin de subir quelques rénovations. C’est ce que la commune fait petit à petit depuis 2003.</p>
+            </div>
+        </section>
+        <!--Gaasbeek-->
+        <section class="content reverse">
+            <img src="View/Images/Gaasbeek_cmp.jpeg" alt="chateau d\'Alden Biesen"/>
+            <div class="separation"></div>
+            <div class="text">
+                <h3>Château de Gaasbeek</h3>
+                <p>Ce château fut conçu à la base pour défendre Bruxelles au XIIIe Siècle. Il va être détruit puis reconstruit à plusieurs reprises avant d’être habité par des nobles. Ce château de style néoromantique sera finalement racheté et restauré par la marquise Arconati Visconti. Elle le transformera en musée pour y exposer son énorme collection d’objet d’art.</p>
+            </div>
+        </section>
+        <!--Comtes-->
+        <section class="content">
+            <img src="View/Images/Comtes_cmp.jpeg" alt="chateau d\'Alden Biesen"/>
+            <div class="separation"></div>
+            <div class="text">
+                <h3>Château des Comtes</h3>
+                <p>Le château fut construit au courant du IXe siècle par le comte Baudoin 1er de Flandre dans le but de défendre sa ville de l’invasion des Vikings.</p>
+            </div>
+        </section>
+        <!--Ooidonk-->
+        <section class="content reverse">
+            <img src="View/Images/Ooidonk_cmp.jpeg" alt="chateau d\'Alden Biesen"/>
+            <div class="separation"></div>
+            <div class="text">
+                <h3>Château d’Ooidonk</h3>
+                <p>Propriété du comte Henry T’Kint, le bâtiment de style renaissance est possédée par la famille de celui-ci depuis le XIXe siècle. Il est protégé comme monument depuis 1944. Il n’est uniquement ouvert au public qu'au début avril jusqu’au 15 septembre.</p>
+            </div>
+        </section>
+        <footer>
+            <p>Mail : <a href="mailto:castletour@gmail.com">castletour@gmail.com</a><br/>Tel : +32 684 97 25 75</p>
+            <div class="separation"></div>
+            <p><b>Adresse postale</b><br/>Rue Vankasteel, 33<br/>8770   Ingelmunster</p>
+        </footer>
+    </body>
+</html>

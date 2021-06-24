@@ -1,0 +1,465 @@
+@font-face{
+    font-family: "Gravity";
+    src:    url("../Fonts/Gravity.otf") format("opentype");
+}
+@font-face{
+    font-family: "Roboto";
+    src:    url("../Fonts/Roboto.ttf") format("truetype");
+}
+@media screen and (min-width: 1024px){
+    #to_the_top{
+        display: none;
+    }
+    body{
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(120deg, darkblue, darkorange);
+        background-repeat: no-repeat;
+        background-attachment: initial;
+        font-family: "Gravity";
+        color: #3b3b3b;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    header{
+        margin:  0 5% 0 5%;
+        height: 100px;
+        width: 90%;
+        display: flex;
+        z-index: 3;
+        position: fixed;
+        flex-direction: row;
+        justify-content: space-around;
+        font-family: "Gravity";
+        vertical-align: middle;
+    }
+    header > div{
+        width: 40%;
+        display: flex;
+        justify-content: space-around;
+    }
+    header > div > p{
+        display: block;
+        margin-top: 8%;
+        margin-bottom: 0;
+    }
+    header > div > a:hover{
+        border-bottom: black 2px solid;
+    }
+    header > div > a{
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        font-size: 30px;
+    }
+    header > a > img{
+        height: 100px;
+    }
+    #banner{
+        height: 100px;
+        z-index: 2;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: white;
+        opacity: 75%;
+    }
+    #main{
+        margin: 10% 10% 5% 10%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #main > img{
+        width: 30%;
+        margin-left: 10%;
+        margin-right: 10%;
+        box-shadow:10px 10px 1em black;
+        background-color: white;
+    }
+    .separation{
+        background-color: white;
+        width: 1px;
+        height: 100px;
+        padding: 0;
+        margin: 1%;
+    }
+    #main > h2, form > h2{
+        font-family: "Gravity";
+        color: white;
+        text-align: center;
+        font-size: 35px;
+        font-weight: normal;
+        width: 50%;
+    }
+    .about{
+        padding: 0% 5% 2% 5%;
+        margin: 0 10% 0 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+    }
+    .about > h2{
+        font-size: 50px;
+    }
+    .button{
+        display: block;
+        font-family: "Gravity";
+        font-size: 25px;
+        color: white;
+        background-color: #3b3b3b;
+        -moz-border-radius: 20px;
+        -webkit-border-radius: 20px;
+        border-radius: 20px;
+        border-style: none;
+        padding: 10px 20px 10px 20px;
+        margin-top: 3%;
+        width: 30%;
+        text-decoration: none;
+        text-align: center;
+    }
+    .content{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0 10% 0 10%;
+        padding: 2% 5% 2% 5%;
+        background-color: white;
+    }
+    .text{
+        width: 45%;
+    }
+    .content > .separation{
+        background-color: black;
+    }
+    .reverse{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .content > img{
+        width: 30%;
+        height: auto;
+    }
+    form{
+        margin: 0 10% 0 10%;
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    input, textarea{
+        background-color: white;
+        color: purple;
+        font-size: 10px;
+        -moz-border-radius: 20px;
+        -webkit-border-radius: 20%;
+        border-radius: 20px;
+        border-style: none;
+        padding: 3%;
+        margin: 1%;
+        width: 50%;
+    }
+    form > div{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    #email, textarea{
+        width: 92%;
+    }
+    #number, #person{
+        width: 45%;
+    }
+    #adress{
+        width: 90%;
+    }
+    form > h2{
+        text-decoration: none;
+    }
+    #end{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 5%;
+    }
+    #submit{
+        width: 30%;
+        background-color: #3b3b3b;
+        color: white;
+    }
+    #contact{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0% 5% 2% 5%;
+        margin: 0 10% 0 10%;
+    }
+    #contact > form > h2{
+        font-family: "Gravity";
+        text-decoration: none;
+        font-size: 50px;
+        padding-top: 1%;
+    }
+    #contact > form{
+        width: 80%;
+    }
+    #contact > form > input, #contact > form > textarea, #contact > form > div > input{
+        margin: 1%;
+        font-size: 15px;
+    }
+    footer{
+        background-color: #3b3b3b;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 5%;
+        padding: 2%;
+        color: white;
+        font-size: 12px;
+    }
+    footer > p > a:hover{
+        font-weight: bold;
+    }
+}
+@media screen and (max-width: 1024px){
+    body{
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(120deg, darkblue, darkorange);
+        background-repeat: no-repeat;
+        background-attachment: initial;
+        font-family: "Gravity";
+        color: #3b3b3b;
+    }
+    #to_the_top{
+        background-color: #252525;
+        border-radius: 100%;
+        border-style: none;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        padding: 4%;
+        margin: 3%;
+        width: 10px;
+        height: 10px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    header > #menu_about{
+        order: 1;
+        padding-top: 100px;
+        margin-bottom: 15px;
+    }
+    header > #menu_dest{
+        order: 2;
+        padding-top: 0;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    header > a{
+        order: 0;
+        width: 100%;
+        position: fixed;
+        text-align: center;
+        top: 0;
+        z-index: 1;
+    }
+    header > a > img{
+        height: 75px;
+    }
+    header > div{
+        display: flex;
+        justify-content: space-around;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    header > div > a{
+        display: block;
+        background-color: #ff9e3a;
+        width: 45%;
+        padding: 0px;
+        margin-top: 0;
+        text-align: center;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    #banner{
+        background-color: white;
+        opacity: 75%;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 75px;
+        z-index: 0;
+    }
+    section > img{
+        height: 175px;
+    }
+    #main > img{
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+    }
+    #main{
+        font-family: "Gravity";
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+    }
+    #main > h2{
+        font-weight: normal;
+        font-size: 20px;
+        padding: 0;
+    }
+    .separation{
+        transform: rotate(90deg);
+        background-color: white;
+        width: 1px;
+        height: 50px;
+    }
+    section{
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        padding: 5% 10% 5% 10%;
+        margin: 0 5% 0 5%;
+        text-align: center;
+    }
+    #about{
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .button{
+        display: block;
+        background-color: #3b3b3b;
+        color: white;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-style: none;
+        padding: 10px;
+        font-family: "Gravity";
+        width: 45%;
+        text-decoration: none;
+        text-align: center;
+    }
+    #contact > h2{
+        color: white;
+    }
+    #contact > form > div{
+        width: 94%;
+    }
+    h2{
+        font-size: 30px;
+    }
+    input, textarea{
+        background-color: white;
+        color: purple;
+        -moz-border-radius: 20px;
+        -webkit-border-radius: 20%;
+        border-radius: 20px;
+        border-style: none;
+        padding: 10px;
+        margin: 2px;
+        width: 80%;
+    }
+    form > div{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    #email, textarea{
+        width: 92%;
+    }
+    #number, #person{
+        width: 45%;
+    }
+    #adress{
+        width: 90%;
+    }
+    #submit{
+        width: 50%;
+        background-color: #3b3b3b;
+        color: white;
+    }
+    #end{
+        padding-top: 5%;
+    }
+    .content{
+        margin-bottom: 5%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        background-color: white;
+    }
+    section > p, section > div > p{
+        text-align: justify;
+    }
+    .content > .separation{
+        display: none;
+    }
+    #destination{
+        color: white;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #main > .separation, #main > #map{
+        display: none;
+    }
+    footer{
+        margin: 0;
+        padding: 5%;
+        text-align: center;
+        font-size: 10px;
+        background-color: #3b3b3b;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (min-width: 1024px) and (-ms-high-contrast: none), (-ms-high-contrast: active){
+    body, h2, a{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    section > p{
+        width: 100%;
+        text-align: justify;
+    }
+}
+@media screen and (max-width: 1024px) and (-ms-high-contrast: none), (-ms-high-contrast: active){
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    section > p, section > div{
+        width: 100%;
+        text-align: justify;
+    }
+}
